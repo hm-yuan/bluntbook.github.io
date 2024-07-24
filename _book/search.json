@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "quarto_test",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "权益分派.html#权益分派",
+    "href": "权益分派.html#权益分派",
+    "title": "3  业务办理",
+    "section": "3.1 权益分派",
+    "text": "3.1 权益分派\n\n3.1.1 财报数据准确性\n\n\n3.1.2 分配方案合理性\n\n股本基数准确性、是否存在不参与分派的股份\n\n权益分派应当依据当前总股本为基数进行分派。如存在回购库存股等，导致分派基数与公司总股本不一致的情况，应在权益分派实施公告中说明。\n若存在不参与分派的股份，导致分派基数与总股本不一致的情况，除权除息参数应以总股本为基数进行折算，保留至小数点后7位。\n\n是否超分\n\n\n\n\n3.1.3"
+  }
+]
