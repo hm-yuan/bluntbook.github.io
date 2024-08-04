@@ -2,23 +2,37 @@ project:
   type: book
 
 book:
-  title: "quarto_test"
-  author: "Norah Jones"
+  title: "合规提醒手册"
   date: "2024/7/24"
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
-    - 权益分派.qmd
-    - references.qmd
+    - part: "专项业务"
+      chapters: 
+        - 权益分派.qmd
+
+search: true
 
 bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
-  pdf:
-    documentclass: scrreprt
+    toc-float: true
+    toc-depth: 3
+    theme: 
+      - cosmo
+      - quarto_yhm.scss
+    include-in-header: 
+      text: | 
+        <script defer data-domain="bradcongelio.com/nfl-analytics-with-r-book" src="https://plausible.io/js/script.js"></script>
+        <link rel = "shortcut icon" href = "favicon.ico" />
+        
+    smooth-scroll: true
+    code-link: true
+    code-overflow: wrap
+    fig-align: center
+    fig-cap-location: bottom
+    author-meta: "Bradley Congelio"
 
 editor: visual
 

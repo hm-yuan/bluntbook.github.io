@@ -2,12 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Bradley Congelio">
 
-<title>quarto_test - 3&nbsp; 业务办理</title>
+<title>合规提醒手册 - 1&nbsp; 权益分派</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./summary.html" rel="prev">
+<link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -47,20 +47,30 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<script defer="" data-domain="bradcongelio.com/nfl-analytics-with-r-book" src="https://plausible.io/js/script.js"></script>
+<link rel="shortcut icon" href="favicon.ico">
 
 
 </head>
@@ -71,12 +81,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./权益分派.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">业务办理</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./权益分派.html">专项业务</a></li><li class="breadcrumb-item"><a href="./权益分派.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">权益分派</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -86,15 +96,15 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">quarto_test</a> 
+      <a href="./">合规提醒手册</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="搜索"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -108,42 +118,54 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">专项业务</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./权益分派.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">业务办理</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">权益分派</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">目录</h2>
    
   <ul>
-  <li><a href="#权益分派" id="toc-权益分派" class="nav-link active" data-scroll-target="#权益分派"><span class="header-section-number">3.1</span> 权益分派</a>
+  <li><a href="#财报数据准确性" id="toc-财报数据准确性" class="nav-link active" data-scroll-target="#财报数据准确性"><span class="header-section-number">1.1</span> 财报数据准确性</a>
   <ul class="collapse">
-  <li><a href="#财报数据准确性" id="toc-财报数据准确性" class="nav-link" data-scroll-target="#财报数据准确性"><span class="header-section-number">3.1.1</span> 财报数据准确性</a></li>
-  <li><a href="#分配方案合理性" id="toc-分配方案合理性" class="nav-link" data-scroll-target="#分配方案合理性"><span class="header-section-number">3.1.2</span> 分配方案合理性</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">3.1.3</span> </a></li>
+  <li><a href="#报告期内已宣告分配方案的应付股利处理是否准确" id="toc-报告期内已宣告分配方案的应付股利处理是否准确" class="nav-link" data-scroll-target="#报告期内已宣告分配方案的应付股利处理是否准确"><span class="header-section-number">1.1.1</span> 报告期内已宣告分配方案的应付股利处理是否准确</a></li>
+  <li><a href="#权益分派实施公告中的未分配利润资本公积等数据与定期报告权益分派预案中是否一致" id="toc-权益分派实施公告中的未分配利润资本公积等数据与定期报告权益分派预案中是否一致" class="nav-link" data-scroll-target="#权益分派实施公告中的未分配利润资本公积等数据与定期报告权益分派预案中是否一致"><span class="header-section-number">1.1.2</span> 权益分派实施公告中的未分配利润、资本公积等数据与定期报告、权益分派预案中是否一致。</a></li>
+  </ul></li>
+  <li><a href="#权益分派方案" id="toc-权益分派方案" class="nav-link" data-scroll-target="#权益分派方案"><span class="header-section-number">1.2</span> 权益分派方案</a>
+  <ul class="collapse">
+  <li><a href="#股本基数是否存在库存股" id="toc-股本基数是否存在库存股" class="nav-link" data-scroll-target="#股本基数是否存在库存股"><span class="header-section-number">1.2.1</span> 1. 股本基数：是否存在库存股</a></li>
+  <li><a href="#分配规模是否存在超分" id="toc-分配规模是否存在超分" class="nav-link" data-scroll-target="#分配规模是否存在超分"><span class="header-section-number">1.2.2</span> 2. 分配规模：是否存在超分</a></li>
+  <li><a href="#实施时点是否在有效期内" id="toc-实施时点是否在有效期内" class="nav-link" data-scroll-target="#实施时点是否在有效期内"><span class="header-section-number">1.2.3</span> 3. 实施时点：是否在有效期内</a></li>
+  <li><a href="#分配方式" id="toc-分配方式" class="nav-link" data-scroll-target="#分配方式"><span class="header-section-number">1.2.4</span> 4. 分配方式</a></li>
+  </ul></li>
+  <li><a href="#权益分派实施注意事项" id="toc-权益分派实施注意事项" class="nav-link" data-scroll-target="#权益分派实施注意事项"><span class="header-section-number">1.3</span> 权益分派实施注意事项</a>
+  <ul class="collapse">
+  <li><a href="#存在正在进行的股份回购" id="toc-存在正在进行的股份回购" class="nav-link" data-scroll-target="#存在正在进行的股份回购"><span class="header-section-number">1.3.1</span> 1. 存在正在进行的股份回购</a></li>
+  <li><a href="#存在优先股" id="toc-存在优先股" class="nav-link" data-scroll-target="#存在优先股"><span class="header-section-number">1.3.2</span> 2. 存在优先股</a></li>
+  <li><a href="#延期实施权益分派" id="toc-延期实施权益分派" class="nav-link" data-scroll-target="#延期实施权益分派"><span class="header-section-number">1.3.3</span> 3. 延期实施权益分派</a></li>
+  <li><a href="#操作结果确认" id="toc-操作结果确认" class="nav-link" data-scroll-target="#操作结果确认"><span class="header-section-number">1.3.4</span> 4. 操作结果确认</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -151,9 +173,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./权益分派.html">专项业务</a></li><li class="breadcrumb-item"><a href="./权益分派.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">权益分派</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">业务办理</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">权益分派</span></h1>
 </div>
 
 
@@ -166,27 +188,100 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
 
-<section id="权益分派" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="权益分派"><span class="header-section-number">3.1</span> 权益分派</h2>
-<section id="财报数据准确性" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="财报数据准确性"><span class="header-section-number">3.1.1</span> 财报数据准确性</h3>
+
+<section id="财报数据准确性" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="财报数据准确性"><span class="header-section-number">1.1</span> 财报数据准确性</h2>
+<section id="报告期内已宣告分配方案的应付股利处理是否准确" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="报告期内已宣告分配方案的应付股利处理是否准确"><span class="header-section-number">1.1.1</span> 报告期内已宣告分配方案的应付股利处理是否准确</h3>
+<p>如报告期内审议过权益分派，且后续完成实施的，无论实施期间在12月31日前后，均需关注应付股利是否计入，以及计入金额与权益分派实施公告的一致性。如未入账，应扣除该部分应付股利后再判断是否超额分派。</p>
+<p><img src="images/clipboard-2543666220.png" class="img-fluid" width="564"></p>
 </section>
-<section id="分配方案合理性" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="分配方案合理性"><span class="header-section-number">3.1.2</span> 分配方案合理性</h3>
+<section id="权益分派实施公告中的未分配利润资本公积等数据与定期报告权益分派预案中是否一致" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="权益分派实施公告中的未分配利润资本公积等数据与定期报告权益分派预案中是否一致"><span class="header-section-number">1.1.2</span> 权益分派实施公告中的未分配利润、资本公积等数据与定期报告、权益分派预案中是否一致。</h3>
+</section>
+</section>
+<section id="权益分派方案" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="权益分派方案"><span class="header-section-number">1.2</span> 权益分派方案</h2>
+<section id="股本基数是否存在库存股" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="股本基数是否存在库存股"><span class="header-section-number">1.2.1</span> 1. 股本基数：是否存在库存股</h3>
 <ol type="1">
-<li><p>股本基数准确性、是否存在不参与分派的股份</p>
-<ul>
-<li><p>权益分派应当依据当前总股本为基数进行分派。如存在回购库存股等，导致分派基数与公司总股本不一致的情况，应在权益分派实施公告中说明。</p></li>
-<li><p>若存在不参与分派的股份，导致分派基数与总股本不一致的情况，除权除息参数应以总股本为基数进行折算，保留至小数点后7位。</p></li>
-</ul></li>
-<li><p>是否超分</p></li>
-<li></li>
+<li><p><strong>是否考虑库存股：</strong>权益分派应当依据当前总股本为基数进行分派。如存在回购库存股等，导致分派基数与公司总股本不一致的情况，应在权益分派实施公告中说明。</p></li>
+<li><p><strong>库存股相关调整：</strong>若存在不参与分派的股份，导致分派基数与总股本不一致的情况，除权除息参数应以总股本为基数进行折算，保留至小数点后7位。</p>
+<p><img src="images/clipboard-3091763211.png" class="img-fluid" width="418"></p></li>
 </ol>
 </section>
-<section id="section" class="level3" data-number="3.1.3">
-<h3 data-number="3.1.3" class="anchored" data-anchor-id="section"><span class="header-section-number">3.1.3</span> </h3>
+<section id="分配规模是否存在超分" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="分配规模是否存在超分"><span class="header-section-number">1.2.2</span> 2. 分配规模：是否存在超分</h3>
+<ol type="1">
+<li><p>（现金分红金额＋送红股金额）&lt; 最近一次经审计的未分配利润（合并和母公司孰低）。</p>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+如公司以最近一次经审计定期报告进行过权益分派，需要以扣除已分派金额后的未分配利润为基准。
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div></li>
+<li><p>转增金额 &lt; 最近一次经审计的母公司资本公积金额。</p>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+若涉及到盈余公积转增股本，转增后留存的法定盈余公积不得少于转增前注册资本的25%。
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div></li>
+</ol>
+</section>
+<section id="实施时点是否在有效期内" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="实施时点是否在有效期内"><span class="header-section-number">1.2.3</span> 3. 实施时点：是否在有效期内</h3>
+<ol type="1">
+<li>股权登记日应当在股东大会后2个月内，如超期，在公告中致歉，可以继续实施，但该行为违反了《权益分派指引》，属于权益分派违规。</li>
+<li>如年度股东大会授权中期分红的，董事会按照股东大会授权制定权益分派方案后，无需股东大会再次审议，股权登记日应当在董事会后2个月内。</li>
+</ol>
+</section>
+<section id="分配方式" class="level3" data-number="1.2.4">
+<h3 data-number="1.2.4" class="anchored" data-anchor-id="分配方式"><span class="header-section-number">1.2.4</span> 4. 分配方式</h3>
+<ol type="1">
+<li><p>是否存在自派：对于权益分派方法为“部分自派”的，即按账户自派或按股份性质自派的，公司应核实自派股东是否存在质押、冻结等情况，自派是否符合相关约定或法院要求。同时<strong>应在权益分派实施公告披露申请中说明自派款项的派发安排，</strong>避免应分派未分派的定向分派情形。</p></li>
+<li><p><strong>是否为定向分派：</strong>原则上不可做定向分派（非面向全体股东分派、不按持股比例分派等），除非公司章程另有规定（仅限现金分红）。</p></li>
+</ol>
+</section>
+</section>
+<section id="权益分派实施注意事项" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="权益分派实施注意事项"><span class="header-section-number">1.3</span> 权益分派实施注意事项</h2>
+<section id="存在正在进行的股份回购" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="存在正在进行的股份回购"><span class="header-section-number">1.3.1</span> 1. 存在正在进行的股份回购</h3>
+<ol type="1">
+<li><p>调整回购价格、规模：与权益分派实施公告同步披露回购价格、股数调整公告</p></li>
+<li><p>权益分派期间不得实施股份回购：因回购库存股会影响除权除息参数计算，为保证除权除息准确性，自向中国结算申请权益分派至权益分派实施完毕期间，不得实施股份回购操作。</p></li>
+<li><p>要约价格调整：若存在进行中的要约收购或回购，要约价格应与基础证券权益分派同步调整，同时需进行业务操作。</p></li>
+</ol>
+</section>
+<section id="存在优先股" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="存在优先股"><span class="header-section-number">1.3.2</span> 2. 存在优先股</h3>
+<p>对于已发行优先股的上市公司需注意，公司在完全支付约定的优先股股东股息之前，不得向普通股股东分配利润。</p>
+</section>
+<section id="延期实施权益分派" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="延期实施权益分派"><span class="header-section-number">1.3.3</span> 3. 延期实施权益分派</h3>
+<p>若无法在已披露公告中的除权除息日进行派发的，公司需在R-1日前披露终止或延期分派公告，否则应申请自R日开市起停牌，并于披露相关公告后申请复牌。</p>
+</section>
+<section id="操作结果确认" class="level3" data-number="1.3.4">
+<h3 data-number="1.3.4" class="anchored" data-anchor-id="操作结果确认"><span class="header-section-number">1.3.4</span> 4. 操作结果确认</h3>
+<p>为避免操作风险，确保除权除息准确性，上市公司需在在除权除息生效日（R+1日）8：45前及时登录业务支持平台对操作结果进行确认，如未按时操作，监管员会收到提示短信，请监管员提醒公司及时进行确认。公司应重点关注除权除息参考价的准确性。</p>
 
 
 </section>
@@ -247,12 +342,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "已复制");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "已复制");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -272,10 +367,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -285,8 +397,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -298,7 +419,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -342,6 +586,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -367,6 +612,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -428,18 +699,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./summary.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span>
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
 
 
 
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
